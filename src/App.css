@@ -36,3 +36,31 @@
     transform: rotate(360deg);
   }
 }
+:root {
+  --robot-size: 1rem;
+}
+.grid{
+  width: 100vw;
+  aspect-ratio: 1;
+  display: flex;
+  flex-direction: column;
+}
+.grid .row{
+  
+  display: flex;
+  place-content: center;
+}
+
+.grid .col{
+  min-width: calc(calc(var(--robot-size) * 2) + 1rem);
+  aspect-ratio: 1;
+  background-color: #282c34;
+  outline: 1px solid red;
+  display: grid;
+  place-content: center;
+}
+.robot {
+  width: var(--robot-size);
+  aspect-ratio: 1;
+  background-color: #1d55c5
+}

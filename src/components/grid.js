@@ -37,8 +37,8 @@ export function Grid ({
         </div>));
     }
     return (
-        <div id="grid" className="grid"> 
-        <main>{getRows()}</main>
+        <div id="grid" className="robot-grid"> 
+        <main className="grid">{getRows()}</main>
         <footer>
             <button onClick={move}>Move</button>
             <button onClick={rotate}>Rotate</button>
